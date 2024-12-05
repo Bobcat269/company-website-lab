@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const Home = ({companyInfo}) => {
     return(
-    <h1>Hello Home</h1>
+    <h1>The Power Rangers</h1>
     )
 }
 

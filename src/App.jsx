@@ -5,6 +5,7 @@ import Home from './components/Home.jsx'
 import History from './components/History.jsx'
 import Staff from './components/Staff.jsx'
 import ContactUs from './components/ContactUs.jsx'
+import Footer from './components/Footer.jsx'
 
 // import Footer from './components/Footer.jsx'
 
@@ -42,11 +43,13 @@ const companyInfo = {
   return (
     <>
     <Navbar handleSection={handleSection}/>
+    <main>
       {page === "Home"? <Home companyInfo={companyInfo}/>:''}
       {page === "History"? <History companyInfo={companyInfo}/>:''}
       {page === "Staff"? <Staff companyInfo={companyInfo}/>:''}
       {page === "ContactUs"? <ContactUs companyInfo={companyInfo}/>:''}
-
+      </main>
+    <Footer/>
     </>
   )
 }
