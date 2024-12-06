@@ -13,9 +13,9 @@ const ContactUs = ({rangerInfo}) => {
             <h1>Hello Contact Us!</h1>
         <div>
             {/* <h2>Name: {rangerInfo.name}</h2> */}
-            <h2>{rangerInfo.email}</h2>
-            <h2>{rangerInfo.address}</h2>
-            <h2>{rangerInfo.phone}</h2>
+            <h3>{rangerInfo.email}</h3>
+            <h3>{rangerInfo.address}</h3>
+            <h3>{rangerInfo.phone}</h3>
         </div>
         <div>
         <ContactForm displayMsg={displayMsg}/>
