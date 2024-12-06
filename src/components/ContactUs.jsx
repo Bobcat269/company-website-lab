@@ -1,7 +1,7 @@
 import { useState } from "react"
 import ContactForm from "./ContactForm"
 
-const ContactUs = ({companyInfo}) => {
+const ContactUs = ({rangerInfo}) => {
     // use state to display message if user has entered a contact
     const [msg, setMsg] = useState(false)
     // function being passed down to allow ContactForm.jsx to setMsg
@@ -10,12 +10,12 @@ const ContactUs = ({companyInfo}) => {
     }
     return(
         <>
-            <h1>Hello ContactUs</h1>
+            <h1>Hello Contact Us!</h1>
         <div>
-            <h2>Name: {companyInfo.name}</h2>
-            <h2>Email: {companyInfo.email}</h2>
-            <h2>Address: {companyInfo.address}</h2>
-            <h2>Phone: {companyInfo.phone}</h2>
+            {/* <h2>Name: {rangerInfo.name}</h2> */}
+            <h2>{rangerInfo.email}</h2>
+            <h2>{rangerInfo.address}</h2>
+            <h2>{rangerInfo.phone}</h2>
         </div>
         <div>
         <ContactForm displayMsg={displayMsg}/>

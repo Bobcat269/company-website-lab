@@ -1,6 +1,6 @@
 const Navbar = ({ handleSection }) => {
   return (
-    <div>
+    <nav>
       <button onClick={handleSection} value="Home">
         Home
       </button>
@@ -14,7 +14,7 @@ const Navbar = ({ handleSection }) => {
         Contact
       </button>
       {/* <button onClick={handleSection} value='Home'>Home</button> */}
-    </div>
+    </nav>
   );
 };
 

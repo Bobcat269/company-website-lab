@@ -1,10 +1,14 @@
-const History = ({companyInfo}) => {
+const History = ({rangerInfo}) => {
     return(
         <>
-    <h2>Our Mission</h2>
-    <p>{companyInfo.history.mission}</p>
+    <h2>Plot Overview</h2>
+    {rangerInfo.history.plot.map((history, index) => {
+        return (
+        <p key={index}>{history}</p>
+        )
+    })}
     <h2>Our <span style={{textDecoration: 'underline'}}>Real</span> Mission</h2>
-    <p>{companyInfo.history.realMission}</p>
+    <p>{rangerInfo.history.realMission}</p>
     </>
     )
 }
